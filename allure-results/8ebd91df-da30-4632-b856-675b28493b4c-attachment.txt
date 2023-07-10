@@ -1,0 +1,64 @@
+2023-07-10 14:54:21 [32mINFO[0m ====== WebDriver manager ======
+2023-07-10 14:54:23 [32mINFO[0m Driver [C:\Users\Lera\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+2023-07-10 14:54:23 [35mDEBUG[0m Started executable: `C:\Users\Lera\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe` in a child process with pid: 15756
+2023-07-10 14:54:23 [35mDEBUG[0m POST http://localhost:52583/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-07-10 14:54:23 [35mDEBUG[0m Starting new HTTP connection (1): localhost:52583
+2023-07-10 14:54:24 [35mDEBUG[0m http://localhost:52583 "POST /session HTTP/1.1" 200 0
+2023-07-10 14:54:24 [35mDEBUG[0m Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"114.0.5735.199","chrome":{"chromedriverVersion":"114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052})","userDataDir":"C:\\Users\\Lera\\AppData\\Local\\Temp\\scoped_dir15756_2054231800"},"goog:chromeOptions":{"debuggerAddress":"localhost:52586"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"323502616f764ae365d05c02c479c2f5"}} | headers=HTTPHeaderDict({'Content-Length': '860', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:24 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:24 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/window/maximize {}
+2023-07-10 14:54:24 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/window/maximize HTTP/1.1" 200 0
+2023-07-10 14:54:24 [35mDEBUG[0m Remote response: status=200 | data={"value":{"height":840,"width":1552,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:24 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:24 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/timeouts {"implicit": 10000}
+2023-07-10 14:54:24 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/timeouts HTTP/1.1" 200 0
+2023-07-10 14:54:24 [35mDEBUG[0m Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:24 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:24 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/url {"url": "https://opensource-demo.orangehrmlive.com/web/index.php"}
+2023-07-10 14:54:26 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/url HTTP/1.1" 200 0
+2023-07-10 14:54:26 [35mDEBUG[0m Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:26 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:26 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element {"using": "css selector", "value": "[name = 'username']"}
+2023-07-10 14:54:26 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/element HTTP/1.1" 200 0
+2023-07-10 14:54:26 [35mDEBUG[0m Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A6F2D95B1BCD3EED9D14AEBD82131934_element_2"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:26 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:26 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_2/clear {"id": "A6F2D95B1BCD3EED9D14AEBD82131934_element_2"}
+2023-07-10 14:54:27 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_2/clear HTTP/1.1" 200 0
+2023-07-10 14:54:27 [35mDEBUG[0m Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:27 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:27 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_2/value {"text": "qwerty", "value": ["q", "w", "e", "r", "t", "y"], "id": "A6F2D95B1BCD3EED9D14AEBD82131934_element_2"}
+2023-07-10 14:54:27 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_2/value HTTP/1.1" 200 0
+2023-07-10 14:54:27 [35mDEBUG[0m Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:27 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:27 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element {"using": "css selector", "value": "[name = 'password']"}
+2023-07-10 14:54:27 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/element HTTP/1.1" 200 0
+2023-07-10 14:54:27 [35mDEBUG[0m Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A6F2D95B1BCD3EED9D14AEBD82131934_element_4"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:27 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:27 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_4/clear {"id": "A6F2D95B1BCD3EED9D14AEBD82131934_element_4"}
+2023-07-10 14:54:27 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_4/clear HTTP/1.1" 200 0
+2023-07-10 14:54:27 [35mDEBUG[0m Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:27 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:27 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_4/value {"text": "123", "value": ["1", "2", "3"], "id": "A6F2D95B1BCD3EED9D14AEBD82131934_element_4"}
+2023-07-10 14:54:27 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_4/value HTTP/1.1" 200 0
+2023-07-10 14:54:27 [35mDEBUG[0m Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:27 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:27 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element {"using": "css selector", "value": "[type='submit']"}
+2023-07-10 14:54:27 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/element HTTP/1.1" 200 0
+2023-07-10 14:54:27 [35mDEBUG[0m Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A6F2D95B1BCD3EED9D14AEBD82131934_element_5"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:27 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:27 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_5/click {"id": "A6F2D95B1BCD3EED9D14AEBD82131934_element_5"}
+2023-07-10 14:54:27 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/element/A6F2D95B1BCD3EED9D14AEBD82131934_element_5/click HTTP/1.1" 200 0
+2023-07-10 14:54:27 [35mDEBUG[0m Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:27 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:27 [35mDEBUG[0m POST http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element {"using": "css selector", "value": "[role='alert'] p"}
+2023-07-10 14:54:28 [35mDEBUG[0m http://localhost:52583 "POST /session/323502616f764ae365d05c02c479c2f5/element HTTP/1.1" 200 0
+2023-07-10 14:54:28 [35mDEBUG[0m Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B80B80BB46FA7FC6BA7149B213EB2EBE_element_36"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:28 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:28 [35mDEBUG[0m GET http://localhost:52583/session/323502616f764ae365d05c02c479c2f5/element/B80B80BB46FA7FC6BA7149B213EB2EBE_element_36/text {"id": "B80B80BB46FA7FC6BA7149B213EB2EBE_element_36"}
+2023-07-10 14:54:28 [35mDEBUG[0m http://localhost:52583 "GET /session/323502616f764ae365d05c02c479c2f5/element/B80B80BB46FA7FC6BA7149B213EB2EBE_element_36/text HTTP/1.1" 200 0
+2023-07-10 14:54:28 [35mDEBUG[0m Remote response: status=200 | data={"value":"Invalid credentials"} | headers=HTTPHeaderDict({'Content-Length': '31', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:28 [35mDEBUG[0m Finished Request
+2023-07-10 14:54:28 [35mDEBUG[0m DELETE http://localhost:52583/session/323502616f764ae365d05c02c479c2f5 {}
+2023-07-10 14:54:28 [35mDEBUG[0m http://localhost:52583 "DELETE /session/323502616f764ae365d05c02c479c2f5 HTTP/1.1" 200 0
+2023-07-10 14:54:28 [35mDEBUG[0m Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-07-10 14:54:28 [35mDEBUG[0m Finished Request
