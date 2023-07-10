@@ -8,6 +8,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.edge.service import Service as EdgeService
+from selenium.webdriver.chrome.options import Options
 
 from pages.LoginPage import LoginPage
 from unilities import ReadConfigurations
@@ -35,7 +36,9 @@ def setup_and_teardown(request):
     global driver
     driver =None
     if browser.lower() == "chrome":
-        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')
+        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
     elif browser.lower() == "firefox":
         driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
     elif browser.lower() == "edge":
