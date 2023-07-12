@@ -15,4 +15,6 @@ To manage project customized config files are used so user is able to run projec
 ```
 pytest
 ```
-Run the "pytest" command for run test on the chrome browser and create dir allure-results 
+Run the "pytest" command for run test on the chrome browser and create dir allure-results
+
+You can see [Allure](https://leraroy.github.io/pytest-selenium-allure/) Report on GitHub Pages
