@@ -19,7 +19,7 @@ def pytest_addoption(parser):
                      default='true',
                      help='headless options: "true" or "false"')
     parser.addoption('--browser',
-                     default='chrome',
+                     default=ReadConfigurations.read_configurations("basic_info", "browser"),
                      help='option to define type of browser')
 
 @pytest.fixture()
@@ -39,10 +39,10 @@ def pytest_runtest_makereport(item, call):
 
 @pytest.fixture(autouse=True)
 def setup_and_teardown(request):
-    browser = ReadConfigurations.read_configurations("basic_info", "browser")
     global driver
     driver =None
     headless = request.config.getoption('--headless')
+    browser = request.config.getoption('--browser')
     if browser.lower() == "chrome":
         options = webdriver.ChromeOptions()
         if headless == 'true':
