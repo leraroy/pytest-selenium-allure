@@ -1,0 +1,22 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jul 12 20:25:03 GMT 2023","Wed Jul 12 20:25:04 GMT 2023","1472","tests","test_login","TestLogin","","","test_login_with_incorrect_creds","
+        Check log in with invalid credentials.
+        "
+"failed","Wed Jul 12 20:25:19 GMT 2023","Wed Jul 12 20:25:22 GMT 2023","2217","tests","test_pim","TestAddEmployee","","","test_add_employee_with_correct_creds","
+        Check add employee with valid credentials.
+        "
+"passed","Wed Jul 12 20:25:07 GMT 2023","Wed Jul 12 20:25:08 GMT 2023","652","tests","test_login","TestLogin","","","test_login_with_empty_fields","
+        Check log in with empty fields.
+        "
+"passed","Wed Jul 12 20:25:11 GMT 2023","Wed Jul 12 20:25:12 GMT 2023","651","tests","test_login","TestLogin","","","test_login_with_empty_username","
+        Check log in with empty username.
+        "
+"passed","Wed Jul 12 20:24:58 GMT 2023","Wed Jul 12 20:25:00 GMT 2023","2479","tests","test_login","TestLogin","","","test_login_successful","
+        Check log in with valid credentials.
+        "
+"passed","Wed Jul 12 20:25:15 GMT 2023","Wed Jul 12 20:25:15 GMT 2023","610","tests","test_login","TestLogin","","","test_login_with_empty_password","
+        Check log in with empty password.
+        "
+"passed","Wed Jul 12 20:25:26 GMT 2023","Wed Jul 12 20:25:28 GMT 2023","2138","tests","test_pim","TestAddEmployee","","","test_add_employee_with_empty_fields","
+        Check add employee with empty fields.
+        "
