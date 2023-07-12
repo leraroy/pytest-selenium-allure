@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jul 12 18:19:56 GMT 2023","Wed Jul 12 18:19:59 GMT 2023","2605","tests","test_login","TestLogin","","","test_login_successful","
+        Check log in with valid credentials.
+        "

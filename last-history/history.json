@@ -1,0 +1,1 @@
+{"b8fe88daf241c54f4ac007f6cca05338":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"9fa9545cb72a677e","reportUrl":"https://leraroy.github.io/pytest-selenium-allure/19//#testresult/9fa9545cb72a677e","status":"passed","time":{"start":1689185996412,"stop":1689185999017,"duration":2605}}]}}
