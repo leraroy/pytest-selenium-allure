@@ -8,12 +8,19 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.edge.service import Service as EdgeService
-from selenium.webdriver.chrome.options import Options
 
 from pages.LoginPage import LoginPage
 from unilities import ReadConfigurations
 from unilities.User import User
 
+def pytest_addoption(parser):
+    """Declaring the command-line options for test run"""
+    parser.addoption('--headless',
+                     default='true',
+                     help='headless options: "true" or "false"')
+    parser.addoption('--browser',
+                     default='chrome',
+                     help='option to define type of browser')
 
 @pytest.fixture()
 def log_on_failure(request):
@@ -35,14 +42,22 @@ def setup_and_teardown(request):
     browser = ReadConfigurations.read_configurations("basic_info", "browser")
     global driver
     driver =None
+    headless = request.config.getoption('--headless')
     if browser.lower() == "chrome":
-        chrome_options = Options()
-        chrome_options.add_argument('--headless')
-        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+        options = webdriver.ChromeOptions()
+        if headless == 'true':
+            options.add_argument('--headless')
+        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
     elif browser.lower() == "firefox":
-        driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+        options = webdriver.FirefoxOptions()
+        if headless == 'true':
+            options.add_argument('--headless')
+        driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()), options=options)
     elif browser.lower() == "edge":
-        driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
+        options = webdriver.EdgeOptions()
+        if headless == 'true':
+            options.add_argument('--headless')
+        driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()), options=options)
     else:
         print("Provide a valid browser name from this list chrome/firefox/edge")
     driver.maximize_window()
