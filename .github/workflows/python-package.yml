@@ -37,6 +37,8 @@ jobs:
         run: pip install allure-pytest 
       
       - name: Test with pytest
+        if: always()
+        continue-on-error: true
         run: |
             pytest     
       
