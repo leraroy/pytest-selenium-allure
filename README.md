@@ -17,4 +17,19 @@ pytest
 ```
 Run the "pytest" command for run test on the chrome browser and create dir allure-results
 
+```
+pytest --browser firefox
+```
+Run the "pytest --browser firefox" command for run test on the firefox browser and create dir allure-results
+
+```
+pytest --browser edge
+```
+Run the "pytest --browser edge" command for run test on the edge browser and create dir allure-results
+
+```
+pytest --headless false
+```
+Run the "pytest --headless false" command for run test with a graphical user interface and create dir allure-results
+
 You can see [Allure](https://leraroy.github.io/pytest-selenium-allure/) Report on GitHub Pages
