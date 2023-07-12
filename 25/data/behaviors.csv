@@ -1,0 +1,7 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"","Log in","Log in with empty fields","0","0","1","0","0"
+"","Log in","Log in with empty password","0","0","1","0","0"
+"","Add employee","","0","0","2","0","0"
+"","Log in","Log in with valid credentials","0","0","1","0","0"
+"","Log in","Log in with empty username","0","0","1","0","0"
+"","Log in","Log in with invalid credentials","0","0","1","0","0"
