@@ -12,6 +12,7 @@ To manage project customized config files are used so user is able to run projec
 - Go to the terminal and execute "pip install ." command
   
 ### Command to run test 
+
 ```
 pytest
 ```
