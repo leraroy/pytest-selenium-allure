@@ -10,8 +10,8 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.edge.service import Service as EdgeService
 
 from pages.LoginPage import LoginPage
-from unilities import ReadConfigurations
-from unilities.User import User
+from utilities import ReadConfigurations
+from utilities.User import User
 
 def pytest_addoption(parser):
     """Declaring the command-line options for test run"""

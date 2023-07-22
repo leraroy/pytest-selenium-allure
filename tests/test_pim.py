@@ -3,7 +3,7 @@ import pytest
 from faker import Faker
 
 from pages.pim.AddEmployeePage import AddEmployeePage
-from unilities.GeneratorData import GeneratorData
+from utilities.GeneratorData import GeneratorData
 
 fake = Faker()
 data = GeneratorData()

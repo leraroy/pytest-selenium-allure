@@ -1,7 +1,7 @@
 import allure
 import pytest
 from pages.LoginPage import LoginPage
-from unilities.User import User
+from utilities.User import User
 
 
 @pytest.mark.usefixtures("setup_and_teardown", "log_on_failure")
